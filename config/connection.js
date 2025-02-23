@@ -16,10 +16,11 @@ const sequelize = process.env.JAWSDB_URL
       dialect: "mysql",
       // Set options for the dialect
       dialectOptions: {
-        // Enable decimal numbers in the database
-        decimalNumbers: true,
+        // Set the port to 3306 (i.e., the default MySQL port)
+      port: 3306
       },
-    });
+    }
+);
 
 // Export the Sequelize instance
 module.exports = sequelize;
